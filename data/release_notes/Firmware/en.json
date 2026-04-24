@@ -1,0 +1,421 @@
+{
+  "product": {
+    "name": "DG-Series Firmware",
+    "track": "firmware",
+    "repo": "tesollo/release-notes",
+    "description": "DG-series gripper firmware"
+  },
+  "versions": [
+    {
+      "track": "firmware",
+      "version": "2.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "Firmware v2 initial release",
+      "summary": "Firmware v2 debuts with improved CAN communication cadence and performance.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Improved CAN communication cadence and performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.1",
+      "date": "2025-04-04",
+      "type": "minor",
+      "tag": null,
+      "title": "CAN bus cadence and performance improvements",
+      "summary": "Improved CAN communication cadence and overall performance. (Shipped alongside v2.0.)",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Improved CAN communication cadence and performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.2",
+      "date": "2025-04-15",
+      "type": "minor",
+      "tag": null,
+      "title": "Grasp / blend / input validation stability",
+      "summary": "Fixed numerous stability issues around in-grasp position control, torque limits, blend saves, and IP/Port validation.",
+      "stats": {
+        "features": 1,
+        "changes": 1,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed position control not working on position-locked joints during grasp"
+            },
+            {
+              "text": "Clears prior values when saving the blend list"
+            },
+            {
+              "text": "Fixed twitch on grasp release"
+            },
+            {
+              "text": "Prevent 0 from being entered for the first IP byte and Port"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Torque-limit off: target current can now be entered up to 1.3A (1300)"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Display current blend index during blend playback (inputRegister 4)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.3",
+      "date": "2025-06-03",
+      "type": "minor",
+      "tag": null,
+      "title": "Short Wrist model and 6-axis F/T sensor",
+      "summary": "Added Short Wrist model and 6-axis F/T sensor option.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added Short Wrist model"
+            },
+            {
+              "text": "Added 6-axis F/T sensor option"
+            },
+            {
+              "text": "Added OFFSET command for the 6-axis F/T sensor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.4",
+      "date": "2025-06-05",
+      "type": "minor",
+      "tag": null,
+      "title": "Developer mode and EEPROM stability",
+      "summary": "Blocked Ethernet port 2607 and fixed developer-mode sensor data, EEPROM write, and GPIO display bugs.",
+      "stats": {
+        "features": 1,
+        "changes": 1,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Blocked Ethernet port 2607 (avoids collision with bootloader-reserved port)"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added command to capture sensor offsets in developer mode"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Sensor data changed from 1 byte to 2 bytes in developer mode"
+            },
+            {
+              "text": "Fixed ID being sent alongside sensor-only data in developer mode"
+            },
+            {
+              "text": "Fixed EEPROM write bug"
+            },
+            {
+              "text": "Fixed mismatch between GPIO voltage level and displayed value"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.5",
+      "date": "2025-07-03",
+      "type": "minor",
+      "tag": null,
+      "title": "RS485 communication improvements",
+      "summary": "Improved RS485 communication.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Improved RS485 communication"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.6",
+      "date": "2025-07-16",
+      "type": "minor",
+      "tag": null,
+      "title": "Grasp / offset stabilization",
+      "summary": "Fixed grasp-release and offset bugs and added real-time motor error detection.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added real-time motor error detection"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed grasp release bug"
+            },
+            {
+              "text": "Fixed offset bug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.7",
+      "date": "2025-07-28",
+      "type": "minor",
+      "tag": null,
+      "title": "Load registers extended",
+      "summary": "Start-pose and gain index now also apply to load registers.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Start pose and gain value index now apply to load registers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.8",
+      "date": "2025-08-19",
+      "type": "minor",
+      "tag": null,
+      "title": "Developer mode stability",
+      "summary": "Fixed duty sign, offset application, and simultaneous-mode activation bugs in developer mode.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed duty sign vs. motor direction mismatch in developer mode"
+            },
+            {
+              "text": "Fixed offset being applied in developer mode"
+            },
+            {
+              "text": "Prevented current control and teaching mode from being active simultaneously"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.9",
+      "date": "2025-09-04",
+      "type": "minor",
+      "tag": null,
+      "title": "1F/2F models and homing",
+      "summary": "Added 1F and 2F model support and a homing (origin capture) feature.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added 1F, 2F models"
+            },
+            {
+              "text": "Added homing (origin capture) feature"
+            },
+            {
+              "text": "Motor error values now returned when a module disconnects"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.10",
+      "date": "2025-09-22",
+      "type": "minor",
+      "tag": null,
+      "title": "ShortWrist and motor error-detection stability",
+      "summary": "Fixed a ShortWrist switch-order issue and several grasp-mode bugs.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed incorrect ShortWrist switch order"
+            },
+            {
+              "text": "Fixed grasp and grasp-mode bugs"
+            },
+            {
+              "text": "Fixed motor error-detection code bug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "3.0",
+      "date": "2026-04-03",
+      "type": "major",
+      "tag": "Latest",
+      "title": "DG-S models and tactile sensor support",
+      "summary": "Added DG-S model and tactile sensor support. Error code scheme reorganized into the 400 series.",
+      "stats": {
+        "features": 4,
+        "changes": 2,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-S model"
+            },
+            {
+              "text": "Added DG-S tactile sensor"
+            },
+            {
+              "text": "Implemented step move during position control inside a grasp"
+            }
+          ]
+        },
+        {
+          "kind": "breaking",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Changed error codes to the 400 series"
+            },
+            {
+              "text": "Sensor errors now start at 421 regardless of model"
+            },
+            {
+              "text": "CURRENTHYSTERESIS set to 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

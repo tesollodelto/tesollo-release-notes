@@ -1,0 +1,682 @@
+{
+  "product": {
+    "name": "DGManager",
+    "track": "software",
+    "repo": "tesollo/release-notes",
+    "description": "DG 시리즈 그리퍼 매니저 소프트웨어"
+  },
+  "versions": [
+    {
+      "track": "software",
+      "version": "1.0.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "DG Manager 1.0.0 최초 릴리즈",
+      "summary": "DG-5F를 지원하는 DG Manager 1.0.0이 최초로 출시되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "DG-5F 지원과 함께 DG Manager 최초 출시"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.0.1",
+      "date": "2025-04-08",
+      "type": "patch",
+      "tag": null,
+      "title": "펌웨어 업데이트 기능 추가",
+      "summary": "펌웨어 업데이트 기능이 추가되고 사용자 경험이 개선되었습니다.",
+      "stats": {
+        "features": 5,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "펌웨어 업데이트 기능 추가"
+            },
+            {
+              "text": "메인 화면에서 레시피 로드 시 해당 레시피 페이지가 자동으로 열림"
+            },
+            {
+              "text": "매뉴얼 업데이트"
+            },
+            {
+              "text": "메인 화면에 컨트롤러 가이드 버튼 추가"
+            },
+            {
+              "text": "기타 스타일 조정"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "매뉴얼과 가이드 버튼 간 불일치 수정"
+            },
+            {
+              "text": "레시피 업데이트 관련 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.0",
+      "date": "2025-04-22",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-3F-M 지원",
+      "summary": "DGManager가 DG-3F-M을 지원합니다.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "DG-3F-M 지원 추가"
+            },
+            {
+              "text": "블렌드 동작 중 인덱스 표시"
+            },
+            {
+              "text": "데이터 복원(Data restore) 기능"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "CSV 모니터링 데이터가 처음부터 채워지던 문제 수정"
+            },
+            {
+              "text": "메인 화면 기본 선택이 항상 첫 번째 항목이던 문제 수정"
+            },
+            {
+              "text": "에러 팝업이 두 번 표시되던 문제 수정"
+            },
+            {
+              "text": "레시피 수정/입력 이슈 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.1",
+      "date": "2025-05-08",
+      "type": "patch",
+      "tag": null,
+      "title": "연결 상태 시각 피드백 및 메모리 안정화",
+      "summary": "연결 상태에 대한 시각적 피드백이 추가되고, 강제 연결 해제 및 재연결 관련 메모리 이슈가 해결되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "연결 해제/연결 콜백에 대한 UI 인디케이터 추가"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "강제 연결 해제 후 재연결 시 발생하던 메모리 이슈 수정"
+            },
+            {
+              "text": "데이터 복원 검증 로직에서 0을 유효한 값으로 포함하도록 업데이트"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.2",
+      "date": "2025-05-14",
+      "type": "patch",
+      "tag": null,
+      "title": "한글 매뉴얼 표시 수정",
+      "summary": "한글 매뉴얼이 올바르게 표시되지 않던 문제를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "한글 매뉴얼이 표시되지 않던 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.0",
+      "date": "2025-06-16",
+      "type": "minor",
+      "tag": null,
+      "title": "Linux 지원 (g++20)",
+      "summary": "DGManager와 SDK가 Linux를 지원합니다 (g++20으로 빌드).",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "doc",
+          "title": "참고",
+          "items": [
+            {
+              "text": "Linux의 FFI 관련 이슈로 인해, DGManager는 콜백 메커니즘 대신 get 함수를 사용해 데이터를 가져옵니다"
+            },
+            {
+              "text": "1.2.0부터 그리퍼 포트 2607은 일반 통신에 사용되지 않으며, 부트 모드 전용으로 예약됩니다"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "모든 블렌드 클리어 후 새 블렌드 추가 시 활성화되지 않던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.1",
+      "date": "2025-06-16",
+      "type": "patch",
+      "tag": null,
+      "title": "포트 2607 차단 및 UI 개선",
+      "summary": "포트 2607이 펌웨어 업데이트 전용으로 예약되었으며, fingertip 센서 UI가 개선되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 2,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "포트 2607 차단 (펌웨어 업데이트 전용으로 예약)"
+            },
+            {
+              "text": "Fingertip 센서 UI 개선"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "대소문자 차이로 인해 한글 매뉴얼이 표시되지 않던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.2",
+      "date": "2025-07-02",
+      "type": "patch",
+      "tag": null,
+      "title": "Fingertip 센서 UI 개선",
+      "summary": "Fingertip 센서 UI가 개선되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "Fingertip 센서 UI 개선"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.3.0",
+      "date": "2025-07-21",
+      "type": "minor",
+      "tag": null,
+      "title": "Modbus RTU 검토 및 Ubuntu 20.04 지원",
+      "summary": "DGSDK 1.3.0과 함께 출시되었으며, 연결 타임아웃이 30초에서 50초로 증가했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 2,
+        "fixes": 6
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "DGSDK 1.3.0 릴리즈"
+            },
+            {
+              "text": "Modbus RTU 지원 검토"
+            },
+            {
+              "text": "연결 타임아웃 30초 → 50초로 증가"
+            },
+            {
+              "text": "Ubuntu 20.04 지원 추가"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "참고",
+          "items": [
+            {
+              "text": "fingertip 센서 zero-data 이미지 및 관련 함수 업데이트"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "백업 시 boot recipe 외 항목이 UI에서 갱신되지 않던 문제 수정"
+            },
+            {
+              "text": "블렌드 프리뷰 조기 종료 후 재시작 시 프로그램 멈춤 현상 수정"
+            },
+            {
+              "text": "Low-pass 필터 상태가 UI에 반영되지 않던 문제 수정"
+            },
+            {
+              "text": "제어 모드 게인(PD/PID) 상태 미수신 — 조사 중"
+            },
+            {
+              "text": "3FB 모델용 기본 포즈 6개 추가"
+            },
+            {
+              "text": "UI position grab 상태에서 제어 초기값이 로드되지 않던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.4.0",
+      "date": "2025-08-01",
+      "type": "minor",
+      "tag": null,
+      "title": "iLimit 상태 관리 및 안정성",
+      "summary": "iLimit 상태 관리 기능과 함께 펌웨어 업데이트 체크 동작이 조정되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "iLimit 상태 관리 기능"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "참고",
+          "items": [
+            {
+              "text": "펌웨어 업데이트 체크 주기 — 현재: 10초마다 / 예정: 연결 끊김 감지 → Ping 체크 → 연결 확인"
+            },
+            {
+              "text": "Comport 입력 길이를 8 byte → 32 byte로 확장 (Linux 호환성 개선)"
+            },
+            {
+              "text": "Lab 버튼이 User Mode에서 비활성화됨"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.5.0",
+      "date": "2025-08-25",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F 지원",
+      "summary": "DGManager와 SDK가 DG-4F를 지원합니다. DG-4F 추가에 따른 UI 레이아웃 및 관련 조정이 이루어졌습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "doc",
+          "title": "참고",
+          "items": [
+            {
+              "text": "DG-4F의 기본 자유도는 17번, 18번 모터 순서로 제어됩니다"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "유저 모드에서 레시피 백업 기능이 이후에 옵션 설정을 허용하도록 수정"
+            },
+            {
+              "text": "백그라운드 실행 시 통신 끊김을 방지하는 절전 방지 코드 추가"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "Known Issues",
+          "items": [
+            {
+              "text": "오프라인 모드에서 GPIO 화면 실행 시 폰트 참조 과정에서 지연 발생 (8/26 이후 빌드에서 수정)"
+            },
+            {
+              "text": "FT 센서 Force를 표시하는 화살표가 너무 작아 가시성 저하 (8/26 이후 빌드에서 수정)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.6.0",
+      "date": "2025-09-14",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-2F, DG-1F SDK 통합",
+      "summary": "DGManager와 SDK가 DG-2F 및 DG-1F를 지원합니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "오프셋 수정 시 발생하던 오류 수정"
+            },
+            {
+              "text": "DG-4F용 SDK 함수 추가"
+            },
+            {
+              "text": "GPIO 제어가 동작하지 않던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.7.0",
+      "date": "2025-10-14",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-2F, DG-1F 공식 지원",
+      "summary": "DG-2F 및 DG-1F에 대한 공식 지원이 추가되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "연결 화면에 진행률(progress indicator) 추가"
+            },
+            {
+              "text": "Recipe Manager의 Blend 생성 시 드래그 기능 추가"
+            },
+            {
+              "text": "URDF 업데이트"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "참고",
+          "items": [
+            {
+              "text": "Blend Loop 및 STL 추출 기능은 숨김 명령어 입력으로 사용 가능 (공식 기능 아님)"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "Linux 버전에서 로그 추출 이슈 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.7.1",
+      "date": "2025-11-17",
+      "type": "patch",
+      "tag": null,
+      "title": "SDK 버전 업데이트 연계",
+      "summary": "SDK 버전 업데이트와 관련된 버전 변경입니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": []
+    },
+    {
+      "track": "software",
+      "version": "1.7.2",
+      "date": "2025-11-25",
+      "type": "patch",
+      "tag": null,
+      "title": "SDK 버전 업데이트 연계",
+      "summary": "SDK 버전 업데이트와 관련된 버전 변경입니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "DG-1F, DG-2F의 IP 변경 시 발생하던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "2.0.0",
+      "date": "2026-04-28",
+      "type": "minor",
+      "tag": "수정중",
+      "title": "DG-5F-S15 지원 및 UI/UX 전면 개선",
+      "summary": "DG-5F-S15 모델 지원이 추가되었으며, 전반에 걸친 UI/UX 개선과 다수의 버그가 수정되었습니다.",
+      "stats": {
+        "features": 10,
+        "changes": 8,
+        "fixes": 8
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "DG-5F-S15 모델 지원 추가 (URDF, HTML 구조, 기능 매핑)"
+            },
+            {
+              "text": "연결 화면에 Received Data Types 선택 추가 (모니터링 및 설정과 동기화)"
+            },
+            {
+              "text": "STL 추출에 원점 기준(origin reference) 옵션 추가"
+            },
+            {
+              "text": "GPIO UX 개선 (케이블 색상 표시)"
+            },
+            {
+              "text": "택타일(tactile) 센서 화면 추가"
+            },
+            {
+              "text": "레시피 더블클릭 선택 및 블렌드 횟수 표시 추가"
+            },
+            {
+              "text": "연결 화면에 버전 정보 표시 추가"
+            },
+            {
+              "text": "제어 주기(Control Cycle) 표시 기능 복구"
+            },
+            {
+              "text": "대시보드에 STL 추출 기능 추가"
+            },
+            {
+              "text": "정보 화면에서 로케일 기반 홈페이지 URL 라우팅 추가"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "연결 로딩 메시지를 영문으로 변경"
+            },
+            {
+              "text": "Spy 화면 스타일링 개선"
+            },
+            {
+              "text": "Sensor 화면 스타일링 개선"
+            },
+            {
+              "text": "3D 뷰어 하이라이트 방식 변경 및 가시성 개선"
+            },
+            {
+              "text": "DG-1F, DG-2F의 DAE 파일 크기 감소 (decimated)"
+            },
+            {
+              "text": "NSIS 인스톨러 설정 추가"
+            },
+            {
+              "text": "빌드 사이즈 감소"
+            },
+            {
+              "text": "Linux 지원 강화 및 연결 처리 개선"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "Spy 화면 줌 사용 시 스크롤 비율 불일치 수정"
+            },
+            {
+              "text": "Enter 더블 입력 시 Ready 버튼이 비활성화되던 문제 수정"
+            },
+            {
+              "text": "그리퍼별 HTML 매칭 오류 수정"
+            },
+            {
+              "text": "3D 뷰어 오류 수정"
+            },
+            {
+              "text": "모니터링 화면 깜빡임 현상 수정"
+            },
+            {
+              "text": "제어 화면에서 DG-2F joint 업데이트 오류 수정"
+            },
+            {
+              "text": "DG-1F, DG-2F 초기 데이터 이슈 수정"
+            },
+            {
+              "text": "유저 모드에서 0(zero) 데이터 가시성 문제 수정"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

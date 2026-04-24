@@ -1,0 +1,421 @@
+{
+  "product": {
+    "name": "DG-Series Firmware",
+    "track": "firmware",
+    "repo": "tesollo/release-notes",
+    "description": "DG 시리즈 그리퍼 펌웨어"
+  },
+  "versions": [
+    {
+      "track": "firmware",
+      "version": "2.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "펌웨어 v2 최초 릴리즈",
+      "summary": "CAN 통신 주기 및 성능이 개선된 펌웨어 v2가 출시되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "CAN 통신 주기 및 성능 개선"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.1",
+      "date": "2025-04-04",
+      "type": "minor",
+      "tag": null,
+      "title": "CAN 통신 주기 및 성능 개선",
+      "summary": "CAN 통신 주기와 전반적인 성능이 개선되었습니다. (v2.0과 함께 출시)",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "CAN 통신 주기 및 성능 개선"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.2",
+      "date": "2025-04-15",
+      "type": "minor",
+      "tag": null,
+      "title": "그랩/블렌드/입력 검증 안정화",
+      "summary": "그랩 중 위치 제어, 토크 제한, 블렌드 저장, IP/Port 입력 검증 등 다수의 안정성 이슈가 수정되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 1,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "그랩 중 표지션 락 걸린 관절 위치 제어가 안되는 문제 수정"
+            },
+            {
+              "text": "블렌드 리스트 저장 시 기존 저장값 초기화"
+            },
+            {
+              "text": "그랩 릴리즈 시 움찔하는 버그 수정"
+            },
+            {
+              "text": "IP 주소 첫 바이트 및 Port에 0값 입력 안되도록 수정"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "토크 제한 모드 해제 시 타겟 전류값을 1.3A(1300)까지 입력 가능하도록 변경"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "블렌드 진행 시 현재 진행 중인 블렌드 번호 표시 (inputRegister 4)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.3",
+      "date": "2025-06-03",
+      "type": "minor",
+      "tag": null,
+      "title": "Short Wrist 모델 및 6축 F/T 센서",
+      "summary": "Short Wrist 모델과 6-axis F/T 센서 옵션이 추가되었습니다.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "Short Wrist 모델 추가"
+            },
+            {
+              "text": "6-axis F/T 센서 옵션 추가"
+            },
+            {
+              "text": "6-axis F/T 센서 OFFSET 커맨드 추가"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.4",
+      "date": "2025-06-05",
+      "type": "minor",
+      "tag": null,
+      "title": "개발자 모드 및 EEPROM 안정화",
+      "summary": "이더넷 포트 2607 차단과 함께, 개발자 모드 센서 데이터 처리, EEPROM Write, GPIO 표시 관련 버그가 수정되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 1,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "이더넷 포트 2607 입력 안되도록 변경 (부트로더 고유 포트와 겹치지 않도록)"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "개발자 모드에서 센서 오프셋 잡는 명령어 추가"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "개발자 모드에서 센서 데이터가 1byte이던 문제 수정 (2byte로 변경)"
+            },
+            {
+              "text": "개발자 모드에서 데이터 송신 시 센서 데이터만 받아도 ID가 따라오던 버그 수정"
+            },
+            {
+              "text": "EEPROM Write 버그 수정"
+            },
+            {
+              "text": "GPIO 전압 레벨과 표시값이 다르던 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.5",
+      "date": "2025-07-03",
+      "type": "minor",
+      "tag": null,
+      "title": "RS485 통신 개선",
+      "summary": "RS485 통신이 개선되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "RS485 통신 개선"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.6",
+      "date": "2025-07-16",
+      "type": "minor",
+      "tag": null,
+      "title": "그랩/오프셋 안정화",
+      "summary": "그랩 릴리즈 및 오프셋 관련 버그가 수정되고, 실시간 모터 에러 검출 코드가 추가되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "실시간 모터 에러 검출 코드 추가"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "그랩 릴리즈 버그 수정"
+            },
+            {
+              "text": "오프셋 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.7",
+      "date": "2025-07-28",
+      "type": "minor",
+      "tag": null,
+      "title": "Load 레지스터 적용 범위 확대",
+      "summary": "시작 포즈 및 게인값의 번호가 load하는 레지스터에도 적용되도록 수정되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "시작 포즈, 게인값의 번호를 load하는 레지스터에도 적용되게 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.8",
+      "date": "2025-08-19",
+      "type": "minor",
+      "tag": null,
+      "title": "개발자 모드 안정화",
+      "summary": "개발자 모드의 duty 부호, 오프셋 적용, 동시 모드 활성화 관련 버그가 수정되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "개발자 모드에서 입력한 duty의 부호와 모터 방향이 맞지 않던 버그 수정"
+            },
+            {
+              "text": "오프셋이 개발자 모드에 적용되는 문제 수정"
+            },
+            {
+              "text": "전류 제어와 티칭 모드가 동시에 활성화되지 않도록 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.9",
+      "date": "2025-09-04",
+      "type": "minor",
+      "tag": null,
+      "title": "1F/2F 모델 및 원점 잡기",
+      "summary": "1F, 2F 모델 지원과 원점 잡기 기능이 추가되었습니다.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "1F, 2F 모델 추가"
+            },
+            {
+              "text": "원점 잡기 기능 추가"
+            },
+            {
+              "text": "모듈 연결 끊김 시 모터 에러 값 리턴 기능 추가"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "2.10",
+      "date": "2025-09-22",
+      "type": "minor",
+      "tag": null,
+      "title": "ShortWrist 및 모터 에러 검출 안정화",
+      "summary": "ShortWrist 스위치 순서 문제 및 파지 모드 관련 버그가 수정되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "ShortWrist 스위치 순서가 맞지 않던 문제 수정"
+            },
+            {
+              "text": "파지 및 파지 모드 버그 수정"
+            },
+            {
+              "text": "모터 에러 검출 코드 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "firmware",
+      "version": "3.0",
+      "date": "2026-04-03",
+      "type": "major",
+      "tag": "Latest",
+      "title": "DG-S 모델 및 택타일 센서 지원",
+      "summary": "DG-S 모델과 택타일 센서 지원이 추가되었으며, 에러 코드 체계가 400번대로 변경되었습니다.",
+      "stats": {
+        "features": 4,
+        "changes": 2,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "새로운 기능",
+          "items": [
+            {
+              "text": "DG-S 모델 추가"
+            },
+            {
+              "text": "DG-S 택타일 센서 추가"
+            },
+            {
+              "text": "그랩 중 위치 제어 시 스텝 무브(step move) 기능 구현"
+            }
+          ]
+        },
+        {
+          "kind": "breaking",
+          "title": "변경 사항",
+          "items": [
+            {
+              "text": "에러 코드를 400번대로 변경"
+            },
+            {
+              "text": "센서 에러는 모델과 무관하게 421번부터 시작하도록 변경"
+            },
+            {
+              "text": "CURRENTHYSTERESIS 값 5로 적용"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

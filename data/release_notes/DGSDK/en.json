@@ -1,0 +1,630 @@
+{
+  "product": {
+    "name": "Delto Gripper SDK",
+    "track": "sdk",
+    "repo": "tesollo/release-notes",
+    "description": "Unified control SDK for DG-series grippers"
+  },
+  "versions": [
+    {
+      "track": "sdk",
+      "version": "1.0.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "Delto Gripper SDK release",
+      "summary": "Delto Gripper SDK launches. DG-series grippers can now be controlled through a single, unified SDK.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Initial release of the unified SDK controlling DG-series grippers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.0",
+      "date": "2025-04-08",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-3F-M control added",
+      "summary": "DG-3F-M can now be controlled. DG-5F control was refined and various bugs were fixed.",
+      "stats": {
+        "features": 2,
+        "changes": 1,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-3F-M control"
+            },
+            {
+              "text": "Added gripper IP configuration"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Optimized gripper setup and motion functions"
+            }
+          ]
+        },
+        {
+          "kind": "breaking",
+          "title": "Removed",
+          "items": [
+            {
+              "text": "Removed grasp-algorithm related options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.1",
+      "date": "2025-04-30",
+      "type": "patch",
+      "tag": null,
+      "title": "Final review pass",
+      "summary": "Incorporates the 2025-04-30 final review items.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Applied 2025-04-30 final review updates (see required fixes)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.2",
+      "date": "2025-05-13",
+      "type": "patch",
+      "tag": null,
+      "title": "Reconnect stabilization",
+      "summary": "Resolved program termination on reconnect attempts and unified callback behavior.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed program termination on reconnect attempts"
+            },
+            {
+              "text": "Unified disconnect callback on reconnect failure (user / developer)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.3",
+      "date": "2025-05-14",
+      "type": "patch",
+      "tag": null,
+      "title": "3-finger envelope fix",
+      "summary": "Fixed an issue with the 3-finger envelope.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed 3-finger envelope error"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.0",
+      "date": "2025-06-13",
+      "type": "minor",
+      "tag": null,
+      "title": "Linux .so distribution and Aidin FT sensor",
+      "summary": "The SDK now ships a Linux Shared Object (.so). Added Aidin FT sensor features and new getter functions.",
+      "stats": {
+        "features": 8,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Linux library (.so) distribution"
+            },
+            {
+              "text": "Added Aidin FT sensor features (sensor data receive, sensor init)"
+            },
+            {
+              "text": "Added getters for existing callback parameters (recommended when using JS on Linux)"
+            },
+            {
+              "text": "Added ReceivedGripperData getter"
+            },
+            {
+              "text": "Added CommunicationPeriod getter"
+            },
+            {
+              "text": "Added ReceivedFingertipSensorData getter"
+            },
+            {
+              "text": "Added ReceivedGPIOData getter"
+            },
+            {
+              "text": "Added DataProcessing and DiagnosisSystem getters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.1",
+      "date": "2025-06-25",
+      "type": "patch",
+      "tag": null,
+      "title": "GPIO and gripper-info stability",
+      "summary": "Fixed invalid GPIO input values and a developer-mode gripper model info load issue.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed invalid values being accepted on GPIO input"
+            },
+            {
+              "text": "Fixed gripper model info not loading in one shot in developer mode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.2",
+      "date": "2025-07-07",
+      "type": "patch",
+      "tag": null,
+      "title": "RTU backup stability",
+      "summary": "Fixed program termination during backup over RTU connections.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed program termination during backup after RTU connection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.3",
+      "date": "2025-07-14",
+      "type": "patch",
+      "tag": null,
+      "title": "RTU return verification",
+      "summary": "Fixed return-value verification missing during RTU communication.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed RTU communication not checking return values"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.3.0",
+      "date": "2025-07-22",
+      "type": "minor",
+      "tag": null,
+      "title": "Ubuntu 22.04 support",
+      "summary": "The SDK now supports Ubuntu 22.04 as well.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed backup / restore errors"
+            },
+            {
+              "text": "Fixed comport size"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.4.0",
+      "date": "2025-07-23",
+      "type": "minor",
+      "tag": null,
+      "title": "B-model signed current and Linux RTU compatibility",
+      "summary": "B-model current output is now signed, LowPassFilter can be disabled, and Linux RTU bugs are fixed. Compatible with DGManager 1.4.0 and later.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "B-model current output now returns +/- values"
+            },
+            {
+              "text": "LowPassFilter Alpha = 0 turns the filter off"
+            },
+            {
+              "text": "Expanded comport array for Linux RTU (8 → 32)"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed SetGripperOption() causing jitter"
+            },
+            {
+              "text": "Fixed MoveTCPFinger causing drift"
+            },
+            {
+              "text": "Fixed user-mode iLimit being applied 10×"
+            },
+            {
+              "text": "Fixed Linux RTU communication bug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.5.0",
+      "date": "2025-08-23",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F support",
+      "summary": "DG-4F is now supported.",
+      "stats": {
+        "features": 2,
+        "changes": 2,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-4F features"
+            },
+            {
+              "text": "Added DG-4F base-joint position control and motion-time functions"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Developer mode: data can now be received during SystemStop"
+            },
+            {
+              "text": "Developer mode: duty send direction matches DH parameter direction"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed current control returning NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.6.0",
+      "date": "2025-09-15",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F-M, DG-2F-M, DG-1F-M support",
+      "summary": "DG-4F-M, DG-2F-M, and DG-1F-M are now supported.",
+      "stats": {
+        "features": 4,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "DG-4F-M kinematics and grasp algorithm complete"
+            },
+            {
+              "text": "Added DG-4F-M base joint functions (Gain, position mode, …)"
+            },
+            {
+              "text": "Added DG-2F-M kinematics and grasp algorithm"
+            },
+            {
+              "text": "Added DG-1F-M kinematics"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed reconnect attempts not connecting properly"
+            },
+            {
+              "text": "Fixed return error on joint / finger index input"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.0",
+      "date": "2025-10-20",
+      "type": "minor",
+      "tag": null,
+      "title": "Kinematics fixes and processing speed improvements",
+      "summary": "Fixed DG-2F-M and DG-1F-M kinematics and improved DG-4F-M processing performance.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Fixed DG-2F-M, DG-1F-M kinematics"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Improvements",
+          "items": [
+            {
+              "text": "Improved DG-4F-M processing speed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.1",
+      "date": "2025-11-17",
+      "type": "patch",
+      "tag": null,
+      "title": "MotorDirection compatibility and current-limit tuning",
+      "summary": "MotorDirection now follows the DG-series firmware version, and current control can be applied per module.",
+      "stats": {
+        "features": 1,
+        "changes": 2,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "MotorDirection aligned with DG-series firmware version"
+            },
+            {
+              "text": "Lowered DG-3F-B current limit to 140mA"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added per-module current control (shares PositionMode from SetGraspData)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.2",
+      "date": "2025-11-25",
+      "type": "patch",
+      "tag": null,
+      "title": "DG-2F IP setup stabilization",
+      "summary": "Fixed an issue where the last IP-setting level on DG-2F reset to zero.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed DG-2F IP setting final level value resetting to 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "2.0.0",
+      "date": "2026-04-28",
+      "type": "major",
+      "tag": "Latest",
+      "title": "DG-5F-S series support and new fingertip sensors",
+      "summary": "Added DG-5F-S and DG-5F-S15 models and new FT/Tactile fingertip sensors. The grasp algorithm now scales dynamically based on the number of finger joints.",
+      "stats": {
+        "features": 4,
+        "changes": 4,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-5F-S, DG-5F-S15 models: kinematics, grasp algorithm"
+            },
+            {
+              "text": "Fingertip sensors: added FT and Tactile"
+            },
+            {
+              "text": "Added library (.dll, .so) version-check functions"
+            },
+            {
+              "text": "Added module error codes"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Improvements",
+          "items": [
+            {
+              "text": "Position-control motion speed is now applied during grasp actions"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Updated fingertip protocol"
+            },
+            {
+              "text": "Added variables to fingerTipSensorData struct"
+            },
+            {
+              "text": "Added ReceivedDataType and resized it"
+            },
+            {
+              "text": "Grasp algorithm now computes based on joint count per finger"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed single-joint control releasing other joints"
+            },
+            {
+              "text": "Restore function now resets to boot recipe on completion"
+            },
+            {
+              "text": "Fixed typos in function and variable names"
+            },
+            {
+              "text": "Fixed consecutive position-control calls losing target and motion speed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

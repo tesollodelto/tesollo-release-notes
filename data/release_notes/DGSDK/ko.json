@@ -1,0 +1,630 @@
+{
+  "product": {
+    "name": "Delto Gripper SDK",
+    "track": "sdk",
+    "repo": "tesollo/release-notes",
+    "description": "DG 시리즈 그리퍼 통합 제어 SDK"
+  },
+  "versions": [
+    {
+      "track": "sdk",
+      "version": "1.0.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "Delto Gripper SDK 출시",
+      "summary": "Delto Gripper SDK가 출시됩니다. 이제 DG 시리즈 그리퍼를 하나의 SDK로 동일하게 제어할 수 있습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "DG 시리즈 그리퍼를 통합 제어할 수 있는 SDK 최초 출시"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.0",
+      "date": "2025-04-08",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-3F-M 제어 추가",
+      "summary": "DG-3F-M도 제어할 수 있습니다. DG-5F 제어 기능이 수정되고 기능별 버그가 수정되었습니다.",
+      "stats": {
+        "features": 2,
+        "changes": 1,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "DG-3F-M 제어 기능 추가"
+            },
+            {
+              "text": "그리퍼 IP 세팅 기능 추가"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "그리퍼 세팅 및 동작 관련 함수 최적화"
+            }
+          ]
+        },
+        {
+          "kind": "breaking",
+          "title": "제거된 항목",
+          "items": [
+            {
+              "text": "파지 알고리즘 관련 옵션 제거"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.1",
+      "date": "2025-04-30",
+      "type": "patch",
+      "tag": null,
+      "title": "최종 리뷰 반영",
+      "summary": "25.04.30 최종 리뷰 항목을 반영했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "25.04.30 최종 리뷰 업데이트 항목 수정 완료 (필요 수정사항 참조)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.2",
+      "date": "2025-05-13",
+      "type": "patch",
+      "tag": null,
+      "title": "리커넥트 안정화",
+      "summary": "리커넥트 시도 시 프로그램 종료 문제와 콜백 일관성을 개선했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "리커넥트 시도 시 프로그램 종료되는 버그 수정"
+            },
+            {
+              "text": "리커넥트 실패 시 disconnect 콜백 날리도록 통일 (사용자/개발자)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.1.3",
+      "date": "2025-05-14",
+      "type": "patch",
+      "tag": null,
+      "title": "3지 인벨롭 오류 수정",
+      "summary": "3지 인벨롭 관련 오류를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "3지 인벨롭 오류 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.0",
+      "date": "2025-06-13",
+      "type": "minor",
+      "tag": null,
+      "title": "Linux .so 배포 및 에이딘 FT 센서",
+      "summary": "SDK가 Linux용 Shared Object(.so) 배포를 시작합니다. 에이딘 FT 센서 관련 기능과 신규 Getter 함수들이 추가되었습니다.",
+      "stats": {
+        "features": 8,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "리눅스용 라이브러리 (.so) 배포"
+            },
+            {
+              "text": "에이딘 FT 센서 관련 기능 추가 (센서 데이터 수신, 센서 초기화 함수)"
+            },
+            {
+              "text": "기존 콜백 함수 파라미터 Getter 함수 추가 (Linux 환경에서 JS 사용 시 권장)"
+            },
+            {
+              "text": "ReceivedGripperData Getter 추가"
+            },
+            {
+              "text": "CommunicationPeriod Getter 추가"
+            },
+            {
+              "text": "ReceivedFingertipSensorData Getter 추가"
+            },
+            {
+              "text": "ReceivedGPIOData Getter 추가"
+            },
+            {
+              "text": "DataProcessing, DiagnosisSystem Getter 추가"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.1",
+      "date": "2025-06-25",
+      "type": "patch",
+      "tag": null,
+      "title": "GPIO 및 그리퍼 모델 정보 안정화",
+      "summary": "GPIO 입력값 오류와 개발자 모드의 그리퍼 모델 정보 로드 이슈를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "GPIO 잘못된 값이 입력되는 오류 수정"
+            },
+            {
+              "text": "개발자 모드에서 그리퍼 모델 정보를 한 번에 불러오지 못하는 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.2",
+      "date": "2025-07-07",
+      "type": "patch",
+      "tag": null,
+      "title": "RTU 백업 안정화",
+      "summary": "RTU 연결 후 백업 동작 중 프로그램이 종료되는 문제를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "RTU 연결 후 백업 동작 중 프로그램 종료되는 문제 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.2.3",
+      "date": "2025-07-14",
+      "type": "patch",
+      "tag": null,
+      "title": "RTU 리턴 검증",
+      "summary": "RTU 통신 중 리턴 확인 누락 문제를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "RTU 통신 중에 리턴을 확인하지 않는 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.3.0",
+      "date": "2025-07-22",
+      "type": "minor",
+      "tag": null,
+      "title": "Ubuntu 22.04 지원",
+      "summary": "SDK가 Ubuntu 22.04도 지원합니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "Backup / Restore 오류 수정"
+            },
+            {
+              "text": "Comport 사이즈 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.4.0",
+      "date": "2025-07-23",
+      "type": "minor",
+      "tag": null,
+      "title": "B 모델 전류 출력 및 Linux RTU 호환성",
+      "summary": "B 모델의 전류값 양/음 출력, LowPassFilter 비활성화, Linux RTU 통신 관련 버그가 수정되었습니다. DGManager 1.4.0 이상과 호환됩니다.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "기능 수정",
+          "items": [
+            {
+              "text": "B 모델 전류값 +/- 출력"
+            },
+            {
+              "text": "LowPassFilter Alpha 0 입력 시 Off"
+            },
+            {
+              "text": "Linux RTU 통신을 위해 Comport 배열 사이즈 수정 (8 → 32)"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "SetGripperOption() 호출 시 떨리는 버그 수정"
+            },
+            {
+              "text": "MoveTCPFinger 사용 시 날라가는 버그 수정"
+            },
+            {
+              "text": "사용자 모드 iLimit이 10배로 적용되는 버그 수정"
+            },
+            {
+              "text": "Linux RTU 통신 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.5.0",
+      "date": "2025-08-23",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F 지원",
+      "summary": "DG-4F가 지원됩니다.",
+      "stats": {
+        "features": 2,
+        "changes": 2,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "DG-4F 기능 추가"
+            },
+            {
+              "text": "DG-4F 전용 Base 조인트 위치 제어, 동작 시간 함수 추가"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "기능 수정",
+          "items": [
+            {
+              "text": "개발자 모드 SystemStop 상태에서 데이터 수신할 수 있도록 수정"
+            },
+            {
+              "text": "개발자 모드 제어 시 duty 송신 방향 개선 (DH 파라미터 방향과 동일)"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "전류 제어 시 NaN이 나오는 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.6.0",
+      "date": "2025-09-15",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F-M, DG-2F-M, DG-1F-M 지원",
+      "summary": "DG-4F-M, DG-2F-M, DG-1F-M 이 지원됩니다.",
+      "stats": {
+        "features": 4,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "DG-4F-M 기구학, 파지 알고리즘 적용 완료"
+            },
+            {
+              "text": "DG-4F-M Base 조인트 관련 함수 추가 (Gain, position Mode 등)"
+            },
+            {
+              "text": "DG-2F-M 기구학, 파지 알고리즘 추가"
+            },
+            {
+              "text": "DG-1F-M 기구학 추가"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "재연결 시도 시 정상적으로 연결되지 않던 버그 수정"
+            },
+            {
+              "text": "관절, 손가락 번호 입력 시 리턴 에러 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.0",
+      "date": "2025-10-20",
+      "type": "minor",
+      "tag": null,
+      "title": "기구학 수정 및 처리 속도 개선",
+      "summary": "DG-2F-M, DG-1F-M 기구학이 수정되고 DG-4F-M 관련 처리 속도가 개선되었습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "기능 수정",
+          "items": [
+            {
+              "text": "DG-2F-M, DG-1F-M 기구학 수정"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "개선 사항",
+          "items": [
+            {
+              "text": "DG-4F-M 관련 처리 속도 개선"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.1",
+      "date": "2025-11-17",
+      "type": "patch",
+      "tag": null,
+      "title": "MotorDirection 호환성 및 전류제한 조정",
+      "summary": "DG 시리즈 펌웨어 버전에 맞춰 MotorDirection이 적용되며, 전류 제어를 모듈 단위로 적용할 수 있게 되었습니다.",
+      "stats": {
+        "features": 1,
+        "changes": 2,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "기능 수정",
+          "items": [
+            {
+              "text": "DG 시리즈 펌웨어 버전에 맞게 MotorDirection 적용"
+            },
+            {
+              "text": "DG-3F-B 모델 전류 제한을 140mA로 낮춤"
+            }
+          ]
+        },
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "전류 제어를 모듈 단위로 적용할 수 있도록 기능 추가 (SetGraspData의 PositionMode 공유)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "1.7.2",
+      "date": "2025-11-25",
+      "type": "patch",
+      "tag": null,
+      "title": "DG-2F IP 세팅 안정화",
+      "summary": "DG-2F의 IP 세팅 마지막 레벨값 초기화 문제를 수정했습니다.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "DG-2F IP 세팅 마지막 레벨값이 0으로 초기화되는 버그 수정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "2.0.0",
+      "date": "2026-04-28",
+      "type": "major",
+      "tag": "Latest",
+      "title": "DG-5F-S 시리즈 지원 및 신규 핑거팁 센서",
+      "summary": "DG-5F-S, DG-5F-S15 모델과 신규 FT/Tactile 핑거팁 센서가 추가되었으며, 파지 알고리즘이 손가락 관절 갯수에 따라 동적으로 계산되도록 개선되었습니다.",
+      "stats": {
+        "features": 4,
+        "changes": 4,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "신규 기능",
+          "items": [
+            {
+              "text": "DG-5F-S, DG-5F-S15 모델 추가, 기구학 추가, 파지 알고리즘 추가"
+            },
+            {
+              "text": "핑거팁 센서: 신규 FT, Tactile 추가"
+            },
+            {
+              "text": "라이브러리(.dll, .so) 버전 확인 함수 추가"
+            },
+            {
+              "text": "모듈 에러 코드 추가"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "개선 사항",
+          "items": [
+            {
+              "text": "파지 동작 중 위치 제어 동작 속도 적용되도록 개선"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "기능 수정",
+          "items": [
+            {
+              "text": "핑거팁 프로토콜 수정"
+            },
+            {
+              "text": "fingerTipSensorData 구조체 변수 추가"
+            },
+            {
+              "text": "ReceivedDataType 타입 추가 및 사이즈 변경"
+            },
+            {
+              "text": "파지 알고리즘 손가락당 관절 갯수에 따라 계산되도록 수정"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "버그 수정",
+          "items": [
+            {
+              "text": "관절 단일 제어 시 나머지 관절 제어 풀리는 버그 수정"
+            },
+            {
+              "text": "리스토어 함수 동작 완료 시 부트 레시피로 초기화"
+            },
+            {
+              "text": "함수 명칭, 변수 명칭 오타 수정"
+            },
+            {
+              "text": "위치 제어 연속 호출 시 타겟값 소실 및 동작 속도 적용 안되는 버그 수정"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "product": {
+    "name": "DGManager",
+    "track": "software",
+    "repo": "tesollo/release-notes",
+    "description": "DG-series gripper manager software"
+  },
+  "versions": [
+    {
+      "track": "software",
+      "version": "1.0.0",
+      "date": "2025-04-04",
+      "type": "major",
+      "tag": null,
+      "title": "DG Manager 1.0.0 initial release",
+      "summary": "DG Manager 1.0.0 ships with support for DG-5F.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Initial release of DG Manager with DG-5F support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.0.1",
+      "date": "2025-04-08",
+      "type": "patch",
+      "tag": null,
+      "title": "Firmware update feature added",
+      "summary": "Added firmware update capability and improved the user experience.",
+      "stats": {
+        "features": 5,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added firmware update feature"
+            },
+            {
+              "text": "Loading a recipe from the main screen now opens that recipe page automatically"
+            },
+            {
+              "text": "Manual updates"
+            },
+            {
+              "text": "Added controller guide button to main screen"
+            },
+            {
+              "text": "Miscellaneous style adjustments"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed inconsistency between manual and guide buttons"
+            },
+            {
+              "text": "Fixed recipe update bugs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.0",
+      "date": "2025-04-22",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-3F-M support",
+      "summary": "DGManager now supports DG-3F-M.",
+      "stats": {
+        "features": 3,
+        "changes": 0,
+        "fixes": 4
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-3F-M support"
+            },
+            {
+              "text": "Display current index during blend playback"
+            },
+            {
+              "text": "Data restore feature"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed CSV monitoring data being filled from the start"
+            },
+            {
+              "text": "Fixed main-screen default selection always defaulting to the first item"
+            },
+            {
+              "text": "Fixed error popup showing twice"
+            },
+            {
+              "text": "Fixed recipe edit/input issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.1",
+      "date": "2025-05-08",
+      "type": "patch",
+      "tag": null,
+      "title": "Connection feedback and memory stability",
+      "summary": "Added visual feedback for connection state and resolved memory issues on forced disconnect/reconnect.",
+      "stats": {
+        "features": 1,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added UI indicators for disconnect/connect callbacks"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed memory issue when reconnecting after a forced disconnect"
+            },
+            {
+              "text": "Updated data-restore validation to treat 0 as a valid value"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.1.2",
+      "date": "2025-05-14",
+      "type": "patch",
+      "tag": null,
+      "title": "Korean manual display fix",
+      "summary": "Fixed an issue where the Korean manual was not displayed correctly.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed bug where Korean manual was not displayed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.0",
+      "date": "2025-06-16",
+      "type": "minor",
+      "tag": null,
+      "title": "Linux support (g++20)",
+      "summary": "DGManager and SDK now support Linux (built with g++20).",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "doc",
+          "title": "Notes",
+          "items": [
+            {
+              "text": "Due to FFI limitations on Linux, DGManager uses get functions instead of callbacks to fetch data"
+            },
+            {
+              "text": "From 1.2.0 onward, gripper port 2607 is no longer used for general communication and is reserved for boot mode only"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed new blend not being enabled after clearing all blends"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.1",
+      "date": "2025-06-16",
+      "type": "patch",
+      "tag": null,
+      "title": "Port 2607 reserved and UI polish",
+      "summary": "Port 2607 is now reserved for firmware updates, and fingertip sensor UI has been improved.",
+      "stats": {
+        "features": 0,
+        "changes": 2,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Blocked port 2607 (reserved for firmware updates)"
+            },
+            {
+              "text": "Improved fingertip sensor UI"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed Korean manual not displaying due to case sensitivity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.2.2",
+      "date": "2025-07-02",
+      "type": "patch",
+      "tag": null,
+      "title": "Fingertip sensor UI improvements",
+      "summary": "Fingertip sensor UI has been improved.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Improved fingertip sensor UI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.3.0",
+      "date": "2025-07-21",
+      "type": "minor",
+      "tag": null,
+      "title": "Modbus RTU review and Ubuntu 20.04 support",
+      "summary": "Shipped alongside DGSDK 1.3.0. Connection timeout extended from 30s to 50s.",
+      "stats": {
+        "features": 0,
+        "changes": 2,
+        "fixes": 6
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "DGSDK 1.3.0 released"
+            },
+            {
+              "text": "Modbus RTU support reviewed"
+            },
+            {
+              "text": "Connection timeout 30s → 50s"
+            },
+            {
+              "text": "Added Ubuntu 20.04 support"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "Notes",
+          "items": [
+            {
+              "text": "Updated fingertip sensor zero-data image and related functions"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed items outside boot recipe not refreshing in UI during backup"
+            },
+            {
+              "text": "Fixed program freeze when restarting blend after an early preview exit"
+            },
+            {
+              "text": "Fixed low-pass filter state not reflected in UI"
+            },
+            {
+              "text": "Control mode gain (PD/PID) state not received — under investigation"
+            },
+            {
+              "text": "Added 6 default poses for the 3FB model"
+            },
+            {
+              "text": "Fixed initial control values not loading in UI position-grab state"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.4.0",
+      "date": "2025-08-01",
+      "type": "minor",
+      "tag": null,
+      "title": "iLimit state handling and stability",
+      "summary": "Added iLimit state handling alongside adjustments to firmware update checks.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "iLimit state handling"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "Notes",
+          "items": [
+            {
+              "text": "Firmware update check cadence — current: every 10s / planned: disconnect detection → ping check → connection confirm"
+            },
+            {
+              "text": "Expanded comport input length from 8 bytes → 32 bytes (improves Linux compatibility)"
+            },
+            {
+              "text": "Lab button now disabled in User Mode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.5.0",
+      "date": "2025-08-25",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-4F support",
+      "summary": "DGManager and SDK support DG-4F. UI layout and related adjustments were made to accommodate the new model.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 2
+      },
+      "sections": [
+        {
+          "kind": "doc",
+          "title": "Notes",
+          "items": [
+            {
+              "text": "DG-4F base degree of freedom is controlled by motors #17 and #18 in order"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Recipe backup in user mode now permits option setup afterward"
+            },
+            {
+              "text": "Added wake-lock to prevent communication drops when running in background"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "Known issues",
+          "items": [
+            {
+              "text": "Font reference delay when launching GPIO screen in offline mode (fixed in builds after 8/26)"
+            },
+            {
+              "text": "FT sensor force arrow too small to see clearly (fixed in builds after 8/26)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.6.0",
+      "date": "2025-09-14",
+      "type": "minor",
+      "tag": null,
+      "title": "DG-2F and DG-1F SDK integration",
+      "summary": "DGManager and the SDK now support DG-2F and DG-1F.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 3
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed error occurring when adjusting offsets"
+            },
+            {
+              "text": "Added SDK functions for DG-4F"
+            },
+            {
+              "text": "Fixed GPIO controls not responding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.7.0",
+      "date": "2025-10-14",
+      "type": "minor",
+      "tag": null,
+      "title": "Official DG-2F and DG-1F support",
+      "summary": "Official support added for DG-2F and DG-1F.",
+      "stats": {
+        "features": 0,
+        "changes": 3,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Added progress indicator to Connect screen"
+            },
+            {
+              "text": "Added drag to create Blends in Recipe Manager"
+            },
+            {
+              "text": "Updated URDF"
+            }
+          ]
+        },
+        {
+          "kind": "doc",
+          "title": "Notes",
+          "items": [
+            {
+              "text": "Blend Loop and STL extraction available via hidden command (not official features)"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed log extraction issue on the Linux build"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "1.7.1",
+      "date": "2025-11-17",
+      "type": "patch",
+      "tag": null,
+      "title": "SDK version sync",
+      "summary": "Version bump tied to the matching SDK release.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 0
+      },
+      "sections": []
+    },
+    {
+      "track": "software",
+      "version": "1.7.2",
+      "date": "2025-11-25",
+      "type": "patch",
+      "tag": null,
+      "title": "SDK version sync",
+      "summary": "Version bump tied to the matching SDK release.",
+      "stats": {
+        "features": 0,
+        "changes": 1,
+        "fixes": 0
+      },
+      "sections": [
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Fixed issue occurring when changing IP on DG-1F / DG-2F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "software",
+      "version": "2.0.0",
+      "date": "2026-04-28",
+      "type": "minor",
+      "tag": "수정중",
+      "title": "DG-5F-S15 support and full UI/UX overhaul",
+      "summary": "Added DG-5F-S15 model support along with broad UI/UX improvements and numerous bug fixes.",
+      "stats": {
+        "features": 10,
+        "changes": 8,
+        "fixes": 8
+      },
+      "sections": [
+        {
+          "kind": "feature",
+          "title": "New features",
+          "items": [
+            {
+              "text": "Added DG-5F-S15 model support (URDF, HTML structure, feature mapping)"
+            },
+            {
+              "text": "Added Received Data Types selector to Connect screen (synced with monitoring & settings)"
+            },
+            {
+              "text": "Added origin reference option to STL extraction"
+            },
+            {
+              "text": "Improved GPIO UX (cable color indicators)"
+            },
+            {
+              "text": "Added tactile sensor screen"
+            },
+            {
+              "text": "Added recipe double-click selection and blend count display"
+            },
+            {
+              "text": "Added version info on Connect screen"
+            },
+            {
+              "text": "Restored Control Cycle display"
+            },
+            {
+              "text": "Added STL extraction to Dashboard"
+            },
+            {
+              "text": "Added locale-based homepage URL routing on Info screen"
+            }
+          ]
+        },
+        {
+          "kind": "improvement",
+          "title": "Changes",
+          "items": [
+            {
+              "text": "Changed connection loading message to English"
+            },
+            {
+              "text": "Improved Spy screen styling"
+            },
+            {
+              "text": "Improved Sensor screen styling"
+            },
+            {
+              "text": "Updated 3D viewer highlighting for better visibility"
+            },
+            {
+              "text": "Reduced DAE file sizes for DG-1F / DG-2F (decimated)"
+            },
+            {
+              "text": "Added NSIS installer configuration"
+            },
+            {
+              "text": "Reduced build size"
+            },
+            {
+              "text": "Enhanced Linux support and connection handling"
+            }
+          ]
+        },
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed scroll-ratio mismatch when zooming Spy screen"
+            },
+            {
+              "text": "Fixed Ready button being disabled on double-Enter"
+            },
+            {
+              "text": "Fixed HTML mapping errors for specific grippers"
+            },
+            {
+              "text": "Fixed 3D viewer errors"
+            },
+            {
+              "text": "Fixed flicker on Monitoring screen"
+            },
+            {
+              "text": "Fixed DG-2F joint update error on Control screen"
+            },
+            {
+              "text": "Fixed initial data issues on DG-1F / DG-2F"
+            },
+            {
+              "text": "Fixed visibility of zero values in User mode"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
