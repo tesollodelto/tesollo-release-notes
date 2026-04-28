@@ -2,7 +2,7 @@
 window.I18N = {
   ko: {
     brandSub: "RELEASE NOTES",
-    tracks: { software: "DGManager", sdk: "SDK", firmware: "Firmware" },
+    tracks: { software: "DGManager", sdk: "DGSDK", firmware: "Firmware" },
     searchPlaceholder: "버전 또는 키워드…",
     clearSearch: "검색 지우기",
     allVersions: "전체 버전",
@@ -52,7 +52,7 @@ window.I18N = {
   },
   en: {
     brandSub: "RELEASE NOTES",
-    tracks: { software: "DGManager", sdk: "SDK", firmware: "Firmware" },
+    tracks: { software: "DGManager", sdk: "DGSDK", firmware: "Firmware" },
     searchPlaceholder: "Version or keyword…",
     clearSearch: "Clear search",
     allVersions: "All versions",

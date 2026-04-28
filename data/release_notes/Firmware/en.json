@@ -397,6 +397,12 @@
             },
             {
               "text": "Implemented step move during position control inside a grasp"
+            },
+            {
+              "text": "Added protocol for requesting module error codes in Developer Mode"
+            },
+            {
+              "text": "Added protocol for requesting the internal control cycle in Developer Mode"
             }
           ]
         },

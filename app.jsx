@@ -8,7 +8,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "font": "pretendard",
   "sidebar": "shown",
   "layout": "focus",
-  "lang": "ko"
+  "lang": "en"
 }/*EDITMODE-END*/;
 
 function Root() {
@@ -18,7 +18,7 @@ function Root() {
   const [data, setData] = useStateApp(null);
   const [loadError, setLoadError] = useStateApp(null);
 
-  const lang = tweaks.lang || 'ko';
+  const lang = tweaks.lang || 'en';
   const t = window.I18N[lang];
 
   useEffectApp(() => {

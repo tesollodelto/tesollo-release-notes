@@ -571,7 +571,7 @@
       "version": "2.0.0",
       "date": "2026-04-28",
       "type": "minor",
-      "tag": "수정중",
+      "tag": "Latest",
       "title": "DG-5F-S15 support and full UI/UX overhaul",
       "summary": "Added DG-5F-S15 model support along with broad UI/UX improvements and numerous bug fixes.",
       "stats": {
