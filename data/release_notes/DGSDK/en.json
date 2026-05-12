@@ -552,7 +552,7 @@
       "version": "2.0.0",
       "date": "2026-04-28",
       "type": "major",
-      "tag": "Latest",
+      "tag": null,
       "title": "DG-5F-S series support and new fingertip sensors",
       "summary": "Added DG-5F-S and DG-5F-S15 models and new FT/Tactile fingertip sensors. The grasp algorithm now scales dynamically based on the number of finger joints.",
       "stats": {
@@ -621,6 +621,31 @@
             },
             {
               "text": "Fixed consecutive position-control calls losing target and motion speed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "track": "sdk",
+      "version": "2.0.1",
+      "date": "2026-05-08",
+      "type": "patch",
+      "tag": "Latest",
+      "title": "DG-5F-S series support and new fingertip sensors",
+      "summary": "Added DG-5F-S and DG-5F-S15 models and new FT/Tactile fingertip sensors. The grasp algorithm now scales dynamically based on the number of finger joints.",
+      "stats": {
+        "features": 0,
+        "changes": 0,
+        "fixes": 1
+      },
+      "sections": [
+        {
+          "kind": "fix",
+          "title": "Bug fixes",
+          "items": [
+            {
+              "text": "Fixed decimal-place mismatch when receiving fingertip sensor data in developer mode (missing '/10')"
             }
           ]
         }
