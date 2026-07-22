@@ -407,7 +407,7 @@
           ]
         },
         {
-          "kind": "breaking",
+          "kind": "improvement",
           "title": "변경 사항",
           "items": [
             {

@@ -407,7 +407,7 @@
           ]
         },
         {
-          "kind": "breaking",
+          "kind": "improvement",
           "title": "Changes",
           "items": [
             {
